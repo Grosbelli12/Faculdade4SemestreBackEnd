@@ -1,3 +1,7 @@
+package aula_dia_12_ate_19.entidades
+
+import aula_dia_12_ate_19.enumerados.Cor
+import aula_dia_12_ate_19.enumerados.MaterialCaixaDeAgua
 import java.math.BigDecimal
 
 class CaixaDAgua( // Os 2 parenteses são o construtor da classe
@@ -6,10 +10,10 @@ class CaixaDAgua( // Os 2 parenteses são o construtor da classe
     val diametroInferior :Double,
     val tampa :Boolean,
     val preco: BigDecimal,
-    val cor : String,
+    val cor : Cor,
     val alturaSemTampa :Double,
     val alturaComTampa :Double,
-    val material :String,
+    val material: MaterialCaixaDeAgua,
     val marca : String,
     val peso :Double, //kg
     val largura :Double,
