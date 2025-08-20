@@ -18,7 +18,8 @@ class Funcionario(
     idade = idade,
     cpf = cpf,
     sexo = sexo,
-    telefone = telefone) {
+    telefone = telefone,
+    ) {
 
 
     //Comportamento do Profissional
@@ -30,4 +31,9 @@ class Funcionario(
             return false;
         }
     }
+
+    override fun receberConta(conta: Conta, aDever : BigDecimal ){
+        conta.saldo = conta.saldo.subtract(aDever)
+    }
 }
+

@@ -1,6 +1,7 @@
 package aula_dia_12_ate_19.entidades
 
 import aula_dia_12_ate_19.enumerados.Sexo
+import aula_dia_12_ate_19.enumerados.TipoDaConta
 import java.math.BigDecimal
 
 class Cliente(
@@ -13,8 +14,13 @@ class Cliente(
     val pedidos: Array<String>,
     val divida: BigDecimal,
 
-    ) : Pessoa(nome = nome,
+    ) : Pessoa(
+    nome = nome,
     idade = idade,
     cpf = cpf,
     sexo = sexo,
-    telefone = telefone,) {}
+    telefone = telefone) {
+
+    }
+
+
